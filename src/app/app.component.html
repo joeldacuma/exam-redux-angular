@@ -1,0 +1,16 @@
+<button (click)="getUsers()">Load Button</button>
+
+<div>
+  <table style="width: 100%">
+    <tr>
+      <th>first_name</th>
+      <th>last_name</th>
+      <th>email</th>
+    </tr>
+    <tr *ngFor="let user of users;">
+      <td>{{user.first_name}}</td>
+      <td>{{user.last_name}}</td>
+      <td>{{user.email}}</td>
+    </tr>
+  </table>
+</div>
